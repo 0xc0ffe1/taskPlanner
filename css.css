@@ -1,0 +1,92 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face { 
+    font-family: "logofont";
+    src: url(logofont.ttf) format("truetype");
+}
+
+header{
+	font-family: logofont;
+	background-color: #D5552E;
+	padding: 15px;
+	text-align: center;
+	font-size: 40px;
+	cursor: default;
+	color: white;
+}
+
+body{
+	background-color: #f5f5f5;
+}
+
+button{
+	background-color: orange;
+	padding: 6px;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+
+button:hover{
+	background-color: #E5A038;
+}
+
+.box{
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	margin-top: 40px;
+  	width: 100%;
+}
+
+.box input{
+	padding: 16px;
+	width: 400px;
+	border: 6px solid #D5552E;
+	font-family: monospace;
+	font-size: 18px;
+}
+
+.box button{
+	padding: 22px;
+	margin-left: 8px;
+}
+
+#list{
+	margin-top: 60px;
+	margin: 0 auto;
+	width: 95%;
+	color: #E79752;
+	font-weight: bold;
+	font-size: 22.5px;
+}
+.tasks input{
+	margin-left: 30px;
+	width: 30px;
+	height: 30px;
+}
+
+.tasks:first-child{
+	margin-top: 60px;
+	border: 4px solid #F2A93B;
+	background-color: #E9E9E9;
+	padding: 15px;
+}
+
+.tasks{
+	margin-top: 30px;
+	border: 4px solid #F2A93B;
+	background-color: #E9E9E9;
+	padding: 15px;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	font-family: cursive;
+}
+
+.tasks p{
+	margin-left: 40px;
+}

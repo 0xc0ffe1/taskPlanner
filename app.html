@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Заметки</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://kit.fontawesome.com/2638b9818c.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+	<header>
+		<p>Планировщик Задач</p>
+	</header>
+	<div class="box">
+		<div>
+		<input type="text" id="text" placeholder="Напишите задачу...">
+		<button id="go"><i class="fas fa-arrow-right"></i></button>
+		<button id="clear"><i class="fas fa-trash-alt"></i></button>
+	</div>
+	</div>
+<div id="list">
+</div>
+<script type="text/javascript">
+	function send(){
+    	let text = $('#text').val();
+		if (text != ''){
+			$('#list').append('<div class="tasks"><input type="checkbox">' + '<p>' + text + '</p></div>');
+			$('#text').val('');
+		};
+    };
+	$('#go').click(function(){
+    	send();
+	});
+	$('input').keydown(function(e) {
+    	if(e.keyCode == 13) {
+    		send();
+    	};
+    });
+    $('#clear').click(function(){
+		$('.tasks').remove();
+		$('#text').val('');
+	});
+</script>
+</body>
+</html>
