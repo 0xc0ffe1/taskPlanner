@@ -84,7 +84,7 @@ button:hover{
 	border-radius: 12px;
 	display: flex;
 	align-items: center;
-	font-family: helvetica;
+	font-family: 'open sans';
 }
 
 .tasks p{
