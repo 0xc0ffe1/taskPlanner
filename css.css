@@ -71,14 +71,12 @@ button:hover{
 
 .tasks:first-child{
 	margin-top: 60px;
-	border: 4px solid #F2A93B;
 	background-color: #E9E9E9;
 	padding: 15px;
 }
 
 .tasks{
 	margin-top: 30px;
-	border: 4px solid #F2A93B;
 	background-color: #E9E9E9;
 	padding: 15px;
 	border-radius: 12px;
